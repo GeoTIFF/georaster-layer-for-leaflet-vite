@@ -13,5 +13,20 @@
   },
   "dependencies": {
     "georaster-layer-for-leaflet": "^3.10.0"
+  },
+  "overrides": {
+    "georaster-layer-for-leaflet": {
+      "proj4-fully-loaded": "^0.2.0",
+      "reproject-bbox": {
+        "proj4-fully-loaded": "^0.2.0"
+      },
+      "geocanvas": {
+        "geomask": {
+          "reproject-geojson": {
+            "proj4-fully-loaded": "^0.2.0"
+          }
+        }
+      }
+    }
   }
 }
